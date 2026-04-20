@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: webinar-test
   namespace: rightsizing-cronjob-test-apps
 spec:
   replicas: 3
