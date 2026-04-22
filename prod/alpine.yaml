@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webinar-test-busybox
+  name: webinar-test-alpine
   namespace: webinar-test
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: busybox
+      app: alpine
   template:
     metadata:
       labels:
-        app: busybox
+        app: alpine
     spec:
       containers:
-      - name: busybox
-        image: busybox:stable
+      - name: alpine
+        image: alpine:latest
         resources:
           requests:
             cpu: "100m"
